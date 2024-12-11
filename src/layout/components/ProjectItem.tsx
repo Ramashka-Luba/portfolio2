@@ -17,7 +17,7 @@ export const ProjectItem = (props: ProjectItemPropsType) => {
                 <div><span>{props.subtitleLight}</span>{props.subtitle}</div>
                 <div>
                     <div>{props.desc}</div>
-                    <a href={props.link} target="_blank">View More</a>
+                    <a href={props.link} target="_blank" rel="noreferrer">View More</a>
                 </div>
             </StyledProjectItemWrap>
         </StyledProjectItem>

@@ -19,7 +19,7 @@ export const Main = () => {
             </StyleWrap>
 
             <StyledImage>
-                <img src={Photo}/>
+                <img src={Photo} alt={'Photo3'}/>
             </StyledImage>
         </StyledMain>
     );

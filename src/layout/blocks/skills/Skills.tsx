@@ -1,7 +1,6 @@
 import React from 'react';
 import {SkillsItem} from "../../components/SkillsItem";
 import styled from "styled-components";
-import {Container} from "../../components/Container";
 
 export const Skills = () => {
     return (

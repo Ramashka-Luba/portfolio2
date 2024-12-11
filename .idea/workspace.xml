@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2811ca5f-3e29-4a02-adcb-842ee463a7eb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/images/photo2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/layout/components/Container.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/layout/components/MenuItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    <list default="true" id="2811ca5f-3e29-4a02-adcb-842ee463a7eb" name="Changes" comment="Added necessary blocks for project">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/blocks/about/About.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/blocks/about/About.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/blocks/skills/Skills.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/blocks/skills/Skills.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/components/ProjectItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/components/ProjectItem.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +39,7 @@
   }
 }]]></component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
@@ -65,7 +61,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_interpreter_path": "/Users/lubaromashko/.nvm/versions/node/v22.12.0/bin/node",
     "nodejs_package_manager_path": "yarn",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "settings.editor.selected.configurable": "settings.typescriptcompiler",
     "ts.external.directory.path": "/Users/lubaromashko/it_incubator/portfolio/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
@@ -94,12 +90,25 @@
       <workItem from="1733399018007" duration="34344000" />
       <workItem from="1733838684562" duration="228000" />
       <workItem from="1733838925954" duration="205000" />
-      <workItem from="1733839140781" duration="15383000" />
+      <workItem from="1733839140781" duration="16742000" />
     </task>
+    <task id="LOCAL-00001" summary="Added necessary blocks for project">
+      <option name="closed" value="true" />
+      <created>1733951207910</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1733951207910</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added necessary blocks for project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added necessary blocks for project" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -112,13 +121,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/layout/blocks/skills/Skills.tsx</url>
-          <line>7</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/layout/blocks/skills/Skills.tsx</url>
-          <line>39</line>
+          <line>38</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
