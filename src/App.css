@@ -1,12 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-:focus-visible {
-    outline: 2px solid #5da0f8;
-}
 
 .App {
     /*max-width: 1440px;*/

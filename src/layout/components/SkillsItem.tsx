@@ -19,6 +19,7 @@ export const SkillsItem = (props: SkillItemPropsType) => {
 
 const StyledSkillsItem = styled.li`
     display: grid;
+    max-width: 430px;
     grid-template-columns: min-content 1fr;
     grid-template-rows: min-content max-content;
     gap: 0.3rem 1rem;
@@ -40,5 +41,5 @@ const StyledSkillsTitle = styled.h3`
 const StyledSkillsText = styled.p`
     font-size: 18px;
     font-weight: 200;
-    line-height: 20px;
+    line-height: 22px;
 `

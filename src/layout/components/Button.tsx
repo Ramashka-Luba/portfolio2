@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
+import {theme} from "../../styles/Theme";
 
 type ButtonPropsType = {
     buttontText: string
@@ -15,19 +16,17 @@ export const Button = (props: ButtonPropsType) => {
 };
 
 const StyledButton = styled.button`
-    border: none;
-    background-color: #131212;
-    color: #fff;
+    background-color: ${theme.colors.primary};
+    color: ${theme.colors.secondary};;
     padding: 8px 20px;
-    width: max-content;
-    cursor: pointer;
+    width: max-content;;
     transition: 0.2s;
 
     &:hover {
-        background-color: #423f3f;
+        background-color: ${theme.colors.hover};
     }
 
     &:active {
-        background-color: #555252;
+        background-color: ${theme.colors.active};
     }
 `

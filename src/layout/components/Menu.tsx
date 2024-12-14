@@ -16,10 +16,7 @@ export const Menu = () => {
 
 const StyledMenuList = styled.ul`
     display: flex;
-    gap: 12px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    gap: 12px;;
     justify-self: center;
 `
 

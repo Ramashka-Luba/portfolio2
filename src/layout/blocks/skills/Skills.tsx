@@ -1,11 +1,18 @@
 import React from 'react';
 import {SkillsItem} from "../../components/SkillsItem";
 import styled from "styled-components";
+import {theme} from "../../../styles/Theme";
+import {Container} from "../../../styles/Container";
 
 export const Skills = () => {
     return (
         <StyledSkills>
-            <StyledSkillsList>
+            <Container
+                maxWidth={'1335px'}
+                justify={'center'}
+                wrap={'wrap'}
+                gap={'60px 20px'}
+            >
                 <SkillsItem
                     num={'01.'}
                     title={'React'}
@@ -36,21 +43,12 @@ export const Skills = () => {
                     title={'Design'}
                     text={'consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue'}
                 />
-            </StyledSkillsList>
+            </Container>
         </StyledSkills>
     );
 };
 
 const StyledSkills =styled.section `
-    padding: 100px 52px 145px;
-    background-color: #131212;
-    color: #fff;
-`
-const StyledSkillsList =styled.ul `
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 60px 10px;
-    list-style: none;
-    max-width: 1335px;
-    margin-inline: auto;
+    background-color: ${theme.colors.primary};
+    color: ${theme.colors.secondary};
 `

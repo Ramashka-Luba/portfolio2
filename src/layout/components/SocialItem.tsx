@@ -1,6 +1,7 @@
 import React from 'react';
 import iconSprite from '../../assets/images/sprite.svg';
 import styled from "styled-components"
+import {theme} from "../../styles/Theme";
 
 type SocialItemPropsType = {
     iconId: string
@@ -22,30 +23,21 @@ export const SocialItem = (props: SocialItemPropsType) => {
 const StyleIcon = styled.svg `
     display: block;
     transition: 0.2s;
-
-    &:hover {
-        fill: #423f3f;
-    }
-
-    &:active {
-        fill: #555252;
-    }
 `
 
 const StyledSocialItem = styled.a`
-    display: block;
     padding: 10px;
 
     &:hover {
         svg {
-            transform: scale(1.2);
-            fill: #423f3f;
+            transform: scale(1.1);
+            fill: ${theme.colors.hover};
         }
     }
 
     &:active {
         svg {
-            fill: #555252;
+            fill: ${theme.colors.active};
         }
     }
 `
