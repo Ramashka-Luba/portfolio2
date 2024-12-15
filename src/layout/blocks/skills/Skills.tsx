@@ -8,7 +8,7 @@ export const Skills = () => {
     return (
         <StyledSkills>
             <Container
-                maxWidth={'1335px'}
+                maxWidth={'1375px'}
                 justify={'center'}
                 wrap={'wrap'}
                 gap={'60px 20px'}

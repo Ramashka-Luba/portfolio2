@@ -20,7 +20,8 @@ const StyledFooter = styled.footer`
     grid-template-columns: repeat(2, 1fr);
     justify-self: center;
     gap: 30px;
-    padding-block: 30px;
+    padding-block: 30px 50px;
+    border-top: 1px solid ${props => props.theme.primary};
 `
 const StyledCopyright = styled.small`
     grid-column: span 2;
