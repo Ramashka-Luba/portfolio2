@@ -3,6 +3,8 @@ import Photo from '../../../assets/images/photo.jpg'
 import styled from "styled-components";
 import {theme} from "../../../styles/Theme";
 import {Container} from "../../../styles/Container";
+// import {Button} from "../../components/Button.styled";
+// import CVLUBA from "../../../documents/CVLUBA"
 
 export const About = () => {
     return (
@@ -16,6 +18,7 @@ export const About = () => {
                     <StyledTitle>About Me</StyledTitle>
                     <StyledTextMain>I look at usual things with my unsual eyes.</StyledTextMain>
                     <StyledPhoto src={Photo} alt={'Photo1'}/>
+                    {/*<Button secondary href={CVLUBA} download="CV LUBA">download cv</Button>*/}
                 </StyledWrap>
                 <StyledWrap>
                     <StyledText>

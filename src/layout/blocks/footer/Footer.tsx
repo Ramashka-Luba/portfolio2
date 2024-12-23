@@ -2,12 +2,15 @@ import React from 'react';
 import styled from "styled-components";
 import {Social} from "../../components/Social";
 import {Menu} from "../../components/Menu";
+import {menuData} from "../../../data/menuData";
+import {socialData} from "../../../data/socialData";
+
 
 export const Footer = () => {
     return (
         <StyledFooter>
-            <Social/>
-            <Menu/>
+            <Social socialItems={socialData}/>
+            <Menu menuItems={menuData}/>
             <StyledCopyright>2024 Ramashka Liuba rights reserved :)</StyledCopyright>
         </StyledFooter>
     );

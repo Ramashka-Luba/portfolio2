@@ -5,11 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2811ca5f-3e29-4a02-adcb-842ee463a7eb" name="Changes" comment="Added styles for blocks">
+      <change afterPath="$PROJECT_DIR$/src/data/menuData.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/skillsData.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/socialData.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/documents/CVLUBA.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/blocks/about/About.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/blocks/about/About.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layout/blocks/contact/Contact.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/blocks/contact/Contact.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layout/blocks/footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/blocks/footer/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/blocks/header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/blocks/header/Header.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layout/blocks/skills/Skills.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/blocks/skills/Skills.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/Container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/Container.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/components/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/components/Button.styled.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/components/Menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/components/Menu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/components/MenuItem.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/components/Social.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/components/Social.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/components/SocialItem.tsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,18 +39,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Ramashka-Luba"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Ramashka-Luba&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Ramashka-Luba/portfolio2.git",
-    "accountId": "e35776db-ab5d-4f1c-8aaa-f38940e0d747"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Ramashka-Luba/portfolio2.git&quot;,
+    &quot;accountId&quot;: &quot;e35776db-ab5d-4f1c-8aaa-f38940e0d747&quot;
   }
-}]]></component>
+}</component>
   <component name="MaliciousPackageCheckinHandlerState">
     <option name="packageCheck" value="true" />
   </component>
@@ -68,13 +80,15 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_interpreter_path": "/Users/lubaromashko/.nvm/versions/node/v22.12.0/bin/node",
     "nodejs_package_manager_path": "yarn",
-    "settings.editor.selected.configurable": "settings.typescriptcompiler",
+    "settings.editor.selected.configurable": "project.propVCSSupport.ChangelistConflict",
     "ts.external.directory.path": "/Users/lubaromashko/it_incubator/portfolio/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/documents" />
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/assets/images" />
       <recent name="$PROJECT_DIR$/src/styles" />
       <recent name="$PROJECT_DIR$/src/layout/blocks" />
@@ -88,6 +102,9 @@
     </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>$USER_HOME$/.subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="2811ca5f-3e29-4a02-adcb-842ee463a7eb" name="Changes" comment="" />
@@ -99,6 +116,7 @@
       <workItem from="1733838684562" duration="228000" />
       <workItem from="1733838925954" duration="205000" />
       <workItem from="1733839140781" duration="41092000" />
+      <workItem from="1734687208881" duration="11919000" />
     </task>
     <task id="LOCAL-00001" summary="Added necessary blocks for project">
       <option name="closed" value="true" />
@@ -150,7 +168,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -163,17 +193,5 @@
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/layout/components/Social.tsx</url>
-          <line>6</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

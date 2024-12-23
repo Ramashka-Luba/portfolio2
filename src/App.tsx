@@ -7,13 +7,14 @@ import {Project} from "./layout/blocks/project/Project";
 import {About} from "./layout/blocks/about/About";
 import {Contact} from "./layout/blocks/contact/Contact";
 import {Footer} from "./layout/blocks/footer/Footer";
+import {skillsData} from "./data/skillsData";
 
 function App() {
   return (
     <div className="App">
         <Header/>
         <Main/>
-        <Skills/>
+        <Skills skillItems={skillsData}/>
         <Project/>
         <About/>
         <Contact/>

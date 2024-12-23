@@ -1,14 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
-import {MenuItem} from "./MenuItem";
 
-export const Menu = () => {
+export const Menu = (props: { menuItems: Array<string> }) => {
     return (
         <nav>
             <StyledMenuList>
-                <MenuItem text={'Projects'}/>
-                <MenuItem text={'About'}/>
-                <MenuItem text={'Digital Assets'}/>
+                {props.menuItems.map((item, i) => {
+                    return (
+                        <li key={i}>
+                            <StyledMenuLink href="#">{item}</StyledMenuLink>
+                        </li>
+                    )
+                })}
             </StyledMenuList>
         </nav>
     );
@@ -20,3 +23,6 @@ const StyledMenuList = styled.ul`
     justify-self: center;
 `
 
+const StyledMenuLink = styled.a`
+    padding: 10px;
+`
