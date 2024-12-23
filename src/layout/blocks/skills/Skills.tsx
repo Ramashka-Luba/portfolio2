@@ -2,7 +2,7 @@ import React from 'react';
 import {SkillsItem} from "../../components/SkillsItem";
 import styled from "styled-components";
 import {theme} from "../../../styles/Theme";
-import {Container} from "../../../styles/Container";
+import {Container} from "../../../styles/Container.styled";
 
 type SkillItemPropsType = {
     num: string,

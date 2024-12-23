@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 import Photo from '../../../assets/images/photo.jpg'
-import {Container} from "../../../styles/Container";
+import {Container} from "../../../styles/Container.styled";
 
 export const Main = () => {
     return (

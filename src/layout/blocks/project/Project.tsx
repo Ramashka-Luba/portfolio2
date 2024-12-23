@@ -1,7 +1,7 @@
 import React from 'react';
 import {ProjectItem} from "../../components/ProjectItem";
 import styled from "styled-components";
-import {Container} from "../../../styles/Container";
+import {Container} from "../../../styles/Container.styled";
 
 export const Project = () => {
     return (

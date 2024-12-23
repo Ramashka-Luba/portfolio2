@@ -2,7 +2,7 @@ import React from 'react';
 import Photo from '../../../assets/images/photo.jpg'
 import styled from "styled-components";
 import {theme} from "../../../styles/Theme";
-import {Container} from "../../../styles/Container";
+import {Container} from "../../../styles/Container.styled";
 // import {Button} from "../../components/Button.styled";
 // import CVLUBA from "../../../documents/CVLUBA"
 
