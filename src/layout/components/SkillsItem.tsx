@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
+import {font} from "../../styles/Common";
 
 type SkillItemPropsType = {
     num: string,
@@ -27,19 +28,16 @@ const StyledSkillsItem = styled.li`
 
 const StyledSkillsSpan = styled.span`
     grid-row: span 2;
-    font-size: 70px;
-    font-weight: 100;
-    line-height: 72px;
+    ${font({weight: 100, Fmax: 70, Fmin: 45})};
 `
 
 const StyledSkillsTitle = styled.h3`
-    font-size: 30px;
-    font-weight: 300;
-    line-height: 32px;
+    ${font({weight: 300, Fmax: 30, Fmin: 25})};
 `
 
 const StyledSkillsText = styled.p`
     font-size: 18px;
     font-weight: 200;
     line-height: 22px;
+    ${font({weight: 200, Fmax: 18, Fmin: 14})};
 `

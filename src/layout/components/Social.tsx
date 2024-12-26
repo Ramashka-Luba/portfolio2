@@ -25,6 +25,10 @@ const StyledSocialList = styled.ul`
     display: flex;
     align-items: center;
     gap: 10px;
+
+    @media ${theme.media.tablet} {
+        order: 1;
+    }
 `
 
 const StyleIcon = styled.svg`

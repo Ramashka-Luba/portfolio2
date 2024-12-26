@@ -10,10 +10,10 @@ type SkillItemPropsType = {
     text?: string
 }
 
-export const Skills = (props: { skillItems: SkillItemPropsType[] }) => {
+export const Skills = (props: { skillItems: Array<SkillItemPropsType> }) => {
     return (
         <StyledSkills>
-            <Container
+            <ContainerSkills
                 maxWidth={'1375px'}
                 justify={'center'}
                 wrap={'wrap'}
@@ -28,7 +28,7 @@ export const Skills = (props: { skillItems: SkillItemPropsType[] }) => {
                         />
                     )
                 })}
-            </Container>
+            </ContainerSkills>
         </StyledSkills>
     );
 };
@@ -37,3 +37,11 @@ const StyledSkills =styled.section `
     background-color: ${theme.colors.primary};
     color: ${theme.colors.secondary};
 `
+
+const ContainerSkills = styled(Container)`
+
+    @media ${theme.media.tablet} {
+        gap: 20px 40px;
+    }
+`
+

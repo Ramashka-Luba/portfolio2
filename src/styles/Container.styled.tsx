@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {theme} from "./Theme";
 
 type ContainerPropsType = {
     display?: string
@@ -23,4 +24,8 @@ export const Container = styled.div<ContainerPropsType>`
     max-width: ${props => props.maxWidth || '1080px'};
     margin-inline: ${props => props.marginInline || 'auto'};
     padding-block: ${props => props.paddingBlock || '100px 150px'};
+
+    @media ${theme.media.tablet} {
+        padding-block: ${props => props.paddingBlock || '50px 70px'};
+    }
 `

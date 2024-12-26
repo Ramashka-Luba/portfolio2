@@ -44,7 +44,6 @@ const StyledBurgerBtn = styled.button<{ isOpen: boolean }>`
     z-index: 99;
     width: 40px;
     height: 40px;
-    //background-color: green;
 
     span {
         position: relative;
@@ -101,6 +100,6 @@ const StyledMobileMenuPopup = styled.div<{ isOpen: boolean }>`
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
-        gap: 30px;
+        gap: 40px;
     `}
 `

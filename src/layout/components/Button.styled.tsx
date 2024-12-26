@@ -10,7 +10,7 @@ export const Button = styled.button<ButtonPropsType>`
     width: max-content;
     transition: 0.2s;
     text-transform: uppercase;
-    padding: 10px 20px;
+    padding: 8px 20px;
     font-size: 16px;
     line-height: 24px;
 

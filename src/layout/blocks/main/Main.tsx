@@ -1,19 +1,22 @@
 import React from 'react';
 import styled from "styled-components";
-import Photo from '../../../assets/images/photo.jpg'
+import Photo3 from '../../../assets/images/Photo3.jpg'
 import {Container} from "../../../styles/Container.styled";
+import {font} from "../../../styles/Common";
+import {theme} from "../../../styles/Theme";
 
 export const Main = () => {
     return (
         <StyledMain>
-            <Container
+            <ContainerMain
                 maxWidth={'1200px'}
             >
                 <StyleWrap>
-                    <StyleTitle>HELLO I’M</StyleTitle>
-                    <StyledSvg viewBox="0 0 200 200" width="600">
+                    <StyleTitle>HELLO <br/> I’M</StyleTitle>
+                    <StyledSvg viewBox="0 0 200 200">
                         <defs>
-                            <path id="testPath" d="M15,100a85,85 0 1,0 170,0a85,85 0 1,0 -170,0"></path>
+                            <path id="testPath" d="M15,100a85,85 0 1,0 170,0a85,85 0 1,0 -170,0" fill="#E7E7E7"
+                                  opacity={0}></path>
                         </defs>
                         <use xlinkHref="#testPath" fill="none"></use>
                         <text dx="25" dy="10">
@@ -23,9 +26,9 @@ export const Main = () => {
                 </StyleWrap>
 
                 <StyledImage>
-                    <StyledPhoto src={Photo} alt={'Photo3'}/>
+                    <StyledPhoto src={Photo3} alt={'Photo3'}/>
                 </StyledImage>
-            </Container>
+            </ContainerMain>
         </StyledMain>
     );
 };
@@ -33,7 +36,7 @@ export const Main = () => {
 const StyledMain = styled.section`
     display: flex;
     align-items: center;
-    height: calc(100vh - 85px);
+    min-height: calc(100vh - 85px);
     margin-top: 85px;
 `
 
@@ -42,21 +45,25 @@ const StyleWrap = styled.div`
     margin-bottom: 150px;
     z-index: 1;
     max-width: 610px;
+
+    @media ${theme.media.tablet} {
+        margin-bottom: 100px;
+    }
 `
 
 const StyleTitle = styled.h1`
-    font-size: 150px;
-    font-weight: 800;
-    line-height: 176px;
+    ${font({weight: 800, Fmax: 140, Fmin: 75})};
     text-align: center;
 `
 
 const StyledSvg = styled.svg`
     position: absolute;
-    bottom: -50%;
+    bottom: -30%;
     left: 50%;
     transform: translateX(-50%);
-    
+    max-width: 500px;
+    width: 100%;
+
     textPath {
         font-size: 20px;
         font-weight: 700;
@@ -66,22 +73,38 @@ const StyledSvg = styled.svg`
 const StyledImage = styled.div`
     position: relative;
     transform: rotate(7deg);
+    right: 50px;
 
     &::after {
         position: absolute;
         z-index: -1;
         top: 0;
         left: 0;
-        width: 570px;
-        height: 570px;
+        width: clamp(12.5rem, 5.893rem + 33.04vw, 35.625rem);
+        height: 100%;
         background-color: #E7E7E7;
         transform: rotate(-15deg);
         content: '';
     }
+
+    @media ${theme.media.tablet} {
+        right: 0;
+    }
 `
 
 const StyledPhoto = styled.img`
-    width: 570px;
-    height: 570px;
+    display: block;
     object-fit: cover;
+    width: clamp(12.5rem, 5.893rem + 33.04vw, 35.625rem);
+`
+
+const ContainerMain = styled(Container)`
+    padding-block: 0 50px;
+
+    @media ${theme.media.tablet} {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
 `

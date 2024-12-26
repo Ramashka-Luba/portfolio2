@@ -2,44 +2,71 @@ import React from 'react';
 import {ProjectItem} from "../../components/ProjectItem";
 import styled from "styled-components";
 import {Container} from "../../../styles/Container.styled";
+import {font} from "../../../styles/Common";
+import {theme} from "../../../styles/Theme";
 
-export const Project = () => {
+
+type ProjectItemPropsType = {
+    title: string
+    subtitle: string
+    span: string
+    desc: string
+    link: string
+    urlImg?: string
+}
+
+export const Project = (props: { projecItems: Array<ProjectItemPropsType> }) => {
     return (
         <section>
-            <Container
+            <ContainerProject
                 direction={'column'}
                 gap={'70px'}
             >
-                <StyledProjectTitle>MY PROJECTS</StyledProjectTitle>
-                    <ProjectItem
-                        title={'Mental Health'}
-                        subtitle={'A Case Study_'}
-                        span={'Find Peace in Meditation'}
-                        desc={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.'}
-                        link={'#'}
-                    />
-                    <ProjectItem
-                        title={'Fashion Show'}
-                        subtitle={'A Case Study_'}
-                        span={'Enjoy Fashion Shows From Home'}
-                        desc={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.'}
-                        link={'#'}
-                    />
-                    <ProjectItem
-                        title={'Barbeque'}
-                        subtitle={'Branding_'}
-                        span={'Chicken Barbeque Never Goes Wrong'}
-                        desc={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.'}
-                        link={'#'}
-                    />
-            </Container>
+                <StyledProjectTitle>MY <br/> PROJECTS</StyledProjectTitle>
+                <StyledProjectList>
+                    {props.projecItems.map((item, i) => {
+                        return (
+                            <ProjectItem
+                                key={i}
+                                title={item.title}
+                                subtitle={item.subtitle}
+                                span={item.span}
+                                desc={item.desc}
+                                link={item.link}
+                                urlImg={item.urlImg}
+                            />
+                        )
+                    })}
+                </StyledProjectList>
+
+            </ContainerProject>
         </section>
     );
 };
 
 const StyledProjectTitle =styled.h2`
     max-width: 700px;
-    font-size: 120px;
-    font-weight: 800;
-    line-height: 122px;
+    ${font({weight: 800, Fmax: 120, Fmin: 50})};
+`
+
+const ContainerProject = styled(Container)`
+
+    @media ${theme.media.tablet} {
+        gap: 40px;
+        align-items: start;
+    }
+`
+
+const StyledProjectList = styled.ul`
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+
+    @media ${theme.media.tablet} {
+        flex-direction: row;
+        gap: 10px;
+        overflow: auto;
+        overscroll-behavior-x: contain;
+        scroll-snap-type: x mandatory;
+    }
 `

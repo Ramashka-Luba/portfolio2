@@ -20,10 +20,10 @@ export const Menu = (props: { menuItems: Array<string> }) => {
 const StyledMenuList = styled.ul`
     display: flex;
     gap: 12px;;
-    justify-self: center;
 
     @media ${theme.media.tablet} {
-        flex-direction: column-reverse;
+        order: 1;
+        flex-direction: column;
     }
 `
 

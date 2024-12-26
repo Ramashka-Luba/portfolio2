@@ -25,7 +25,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     a {
-        display: inline-block;
+        display: block;
         text-decoration: none;
         color: ${theme.colors.primary};
         transition: 0.2s;
